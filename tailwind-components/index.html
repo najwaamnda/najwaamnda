@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas PIMk</title>
+    <link href="/tailwind-components/style/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/favicon.png" />
+  </head>
+
+  <body>
+    <header class="bg-black">
+      <nav
+        class="flex items-center justify-between p-4 pl-2"
+        aria-label="Global"
+      >
+        <div class="flex flex-row flex-none max-w-20 items-center">
+          <a href="https://kampusmerdeka.kemdikbud.go.id/program" class="pr-1">
+            <img
+              class="h-12"
+              src="image/logo-pendidikan@2x.0ce0acdc.png"
+              alt=""
+            />
+          </a>
+          <a href="https://kampusmerdeka.kemdikbud.go.id/program" class="pr-1">
+            <img class="w-20" src="image/logo-white@2x.5330316a.png" alt="" />
+          </a>
+        </div>
+        <div
+          class="hidden lg:flex lg:flex-none lg:max-w-40 lg:items-center lg:space-x-6 lg:pr-6"
+        >
+          <a href="#" class="text-white hover:text-gray-300 font-sans font-bold"
+            >Beranda</a
+          >
+          <a href="#" class="text-white hover:text-gray-300 font-sans font-bold"
+            >Program</a
+          >
+          <a href="#" class="text-white hover:text-gray-300 font-sans font-bold"
+            >Butuh Bantuan?</a
+          >
+          <div
+            class="bg-white p-1 flex items-center lg:flex-col lg:items-start lg:p-6 lg:text-center rounded-full"
+          >
+            <img class="h-10 w-10 pr-2" src="image/user.png" alt="Person" />
+            <div class="ml-6">
+              <p
+                class="text-lg font-sans font-semibold text-black lg:text-xl pr-2"
+              >
+                Masuk ke Akun
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex lg:hidden" id="menu">
+          <button type="button" class="text-white focus:outline-none" id="menu">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="lg:hidden" id="mobile-menu">
+        <ul class="bg-white text-vlack p-6">
+          <p class="text-gray-500 font-sans">Program Kampus Merdeka</p>
+          <li>
+            <a href="#" class="block py-2 font-sans font-bold"
+              >Kambus Mengajar</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 font-sans font-bold">Magang MSIB</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 font-sans font-bold"
+              >Studi Independen Bersertifikat</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 font-sans font-bold"
+              >Pertukaran Mahasiswa Merdeka</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block py-2 font-sans font-bold"
+              >Program dan Kegiatan Lainnya</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        // Get the mobile menu button
+        const mobileMenuButton = document.querySelector("#menu");
+
+        // Get the mobile menu
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        // Add a click event listener to the mobile menu button
+        mobileMenuButton.addEventListener("click", () => {
+          // Toggle the 'hidden' class on the mobile menu
+          mobileMenu.classList.toggle("hidden");
+        });
+      </script>
+    </header>
+
+    <main class="container mx-auto py-12">
+      <h2 class="text-4xl lg:text-9xl font-sans font-bold mb-4">
+        Program Kampus Merdeka
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-1 lg:grid-cols-3">
+        <div class="w-full p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/kampus-mengajar-logo@2x.7822f1d5.png"
+              alt="Image"
+              class="w-full rounded-lg lg:h-40 h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">Kampus Mengajar</h2>
+            <p class="text-gray-500 text-sm">
+              Bantu peningkatan kualitas pendidikan dasar dengan terlibat
+              langsung pada proses pengajaran di sekolah-sekolah yang berlokasi
+              di seluruh daerah di Indonesia.
+            </p>
+            <hr class="mt-8" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-4"
+            >
+              Tentang Program
+            </a>
+            <hr class="mt-4" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mt-4 mb-2"
+            >
+              Syarat dan Ketentuan
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/msib-logo@2x.e1ad4cf6.png"
+              alt="Image"
+              class="w-full rounded-lg h-40 lg:h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">Magang MSIB</h2>
+            <p class="text-gray-500 text-sm">
+              Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan
+              kariermu.
+            </p>
+            <button
+              class="w-full py-2 rounded-2xl mt-4 border-2 border-black font-sans font-semibold"
+            >
+              Cari Posisi Magang
+            </button>
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-8"
+            >
+              Tentang Program
+            </a>
+            <hr class="mt-4" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mt-4 mb-2"
+            >
+              Syarat dan Ketentuan
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/msib-logo@2x.e1ad4cf6.png"
+              alt="Image"
+              class="w-full rounded-lg h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">Studi Independen</h2>
+            <p class="text-gray-500 text-sm">
+              Jalankan proyek penelitian dengan studi kasus nyata dari pelaku
+              industri ternama.
+            </p>
+            <button
+              class="w-full py-2 rounded-2xl mt-4 border-2 border-black font-sans font-semibold"
+            >
+              Cari Kelas Studi Independen
+            </button>
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-8"
+            >
+              Tentang Program
+            </a>
+            <hr class="mt-4" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mt-4 mb-2"
+            >
+              Syarat dan Ketentuan
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/pmm-logo@2x.9509faf6.png"
+              alt="Image"
+              class="w-full rounded-lg h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">Pertukaran Mahasiswa Merdeka</h2>
+            <p class="text-gray-500 text-sm">
+              Program pertukaran mahasiswa dalam negeri yang memberikan
+              pengalaman langsung untuk lebih memaknai keberagaman budaya
+              nusantara.
+            </p>
+            <hr class="mt-8" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-4"
+            >
+              Tentang Program
+            </a>
+            <hr class="mt-4" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mt-4 mb-2"
+            >
+              Syarat dan Ketentuan
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/wmk-logo@2x.6e167122.png"
+              alt="Image"
+              class="w-full rounded-lg h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">Wirausaha Merdeka</h2>
+            <p class="text-gray-500 text-sm mt-10">
+              Ikuti program unggulan dari berbagai Perguruan Tinggi yang
+              bertujuan untuk meningkatkan kemampuan wirausaha.
+            </p>
+            <hr class="mt-26" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-4"
+            >
+              Tentang Program
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/iisma-logo@2x.41a490c7.png"
+              alt="Image"
+              class="rounded-lg h-20"
+            />
+            <h2 class="text-xl font-bold mb-2">
+              Indonesian International Student Mobility Awards
+            </h2>
+            <p class="text-gray-500 text-sm">
+              Program pertukaran dengan universitas lain dari seluruh dunia
+              untuk bertukar budaya.
+            </p>
+            <hr class="mt-18" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-4"
+            >
+              Tentang Program
+            </a>
+            <hr class="mt-4" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mt-4 mb-2"
+            >
+              Syarat dan Ketentuan
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 lg:w-1/3 p-4 mb-4">
+          <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+            <img
+              src="image/praktisi-mengajar-logo@2x.76ee529f.png"
+              alt="Image"
+              class="rounded-lg"
+            />
+            <h2 class="text-xl font-bold mb-2">Praktisi Mengajar</h2>
+            <p class="text-gray-500 text-sm">
+              Ruang kolaborasi antara Praktisi sebagai representasi industri
+              dengan dosen Perguruan Tinggi dalam bentuk pengajaran mata kuliah
+              agar mahasiswa lebih siap untuk masuk ke dunia kerja.
+            </p>
+            <hr class="mt-8" />
+            <a
+              href="#"
+              class="text-cyan-400 font-bold font-sans block mb-2 mt-4"
+            >
+              Tentang Program
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-4xl lg:text-9xl font-sans font-bold mb-4">
+        Kegiatan Lainnya
+      </h2>
+      <div class="p-4 mb-4 grid gap-4 sm:grid-cols-1 lg:grid-cols-3">
+        <div class="bg-gray-200 p-4 rounded-lg h-96 shadow-lg">
+          <img
+            src="image/logo-mandiri@2x.2a1d048b.png"
+            alt="Image"
+            class="rounded-lg h-20"
+          />
+          <h2 class="text-xl font-bold mb-2 mt-2">Magang Mandiri</h2>
+          <p class="text-gray-500 text-sm">
+            Temukan pengalaman dunia kerja yang dikelola langsung oleh
+            perusahaan tanpa ada batasan kuota dan jadwal yang lebih fleksibel.
+          </p>
+          <button
+            class="w-full py-2 rounded-2xl mt-4 border-2 border-black font-sans font-semibold"
+          >
+            Cari Posisi Magang
+          </button>
+          <a
+            href="#"
+            class="text-cyan-400 font-bold font-sans block mb-2 mt-18"
+          >
+            Tentang Program
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-black text-white">
+      <div class="container mx-auto text-center">
+        <p>&copy; Tugas 2 PIMK (Najwa Amanda 221402068) 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
